@@ -141,7 +141,7 @@ WHERE PROF1 = 'C' OR PROF2 = 'C';
 SELECT COUNT(*) AS TotalProgrammers
 FROM Programmer
 WHERE PROF1 IN ('COBOL', 'PASCAL') OR PROF2 IN ('COBOL', 'PASCAL');
---20. How many Programmers Don’t know PASCAL and C 
+--20. How many Programmers Donâ€™t know PASCAL and C 
 SELECT COUNT(*) AS TotalProgrammers
 FROM Programmer
 WHERE PROF1 NOT IN ('PASCAL', 'C') AND PROF2 NOT IN ('PASCAL', 'C');
@@ -161,7 +161,7 @@ WHERE GENDER = 'F';
 SELECT PNAME, DATEDIFF(YEAR, DOJ, GETDATE()) AS Experience
 FROM Programmer
 ORDER BY Experience DESC;
---24. Who are the Programmers who celebrate their Birthday’s During the CurrentMonth? 
+--24. Who are the Programmers who celebrate their Birthdayâ€™s During the CurrentMonth? 
 SELECT PNAME
 FROM Programmer
 WHERE MONTH(DOB) = MONTH(GETDATE());
@@ -184,7 +184,7 @@ FROM Programmer;
 SELECT COUNT(*) AS PeopleCount
 FROM Programmer
 WHERE SALARY >= 2000 AND SALARY <= 4000;
---29. Display the details of those who don’t know Clipper, COBOL or PASCAL. 
+--29. Display the details of those who donâ€™t know Clipper, COBOL or PASCAL. 
 SELECT *
 FROM Programmer
 WHERE PROF1 NOT IN ('Clipper', 'COBOL', 'PASCAL') AND PROF2 NOT IN ('Clipper', 'COBOL', 'PASCAL');
@@ -211,7 +211,7 @@ SELECT DEVELOPIN AS Language,
        AVG(SCOST/SOLD) AS AvgPricePerCopy
 FROM Software
 GROUP BY DEVELOPIN;
---35. Display each programmer’s name, costliest and cheapest Packages Developed by him or her. 
+--35. Display each programmerâ€™s name, costliest and cheapest Packages Developed by him or her. 
 SELECT P.PNAME AS ProgrammerName,
        MAX(S.SCOST) AS CostliestPackage,
        MIN(S.SCOST) AS CheapestPackage
@@ -453,7 +453,7 @@ FROM Programmer
 GROUP BY DATEPART(MONTH, DOJ)
 ORDER BY ProgrammerCount DESC
 OFFSET 0 ROWS FETCH FIRST 1 ROWS ONLY;
---78. In which language are most of the programmer’s proficient. 
+--78. In which language are most of the programmerâ€™s proficient. 
 SELECT Language, COUNT(*) AS ProgrammerCount
 FROM (
     SELECT PROF1 AS Language FROM Programmer
