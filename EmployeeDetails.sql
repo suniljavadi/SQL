@@ -1,7 +1,7 @@
---1. Arrange the ‘Orders’ dataset in decreasing order of amount
+--1. Arrange the â€˜Ordersâ€™ dataset in decreasing order of amount
 select * from orders order by order_id desc
---2. Create a table with name ‘Employee_details1’ and comprising of these columns – ‘Emp_id’, 
---‘Emp_name’, ‘Emp_salary’. Create another table with name ‘Employee_details2’, which 
+--2. Create a table with name â€˜Employee_details1â€™ and comprising of these columns â€“ â€˜Emp_idâ€™, 
+--â€˜Emp_nameâ€™, â€˜Emp_salaryâ€™. Create another table with name â€˜Employee_details2â€™, which 
 --comprises of same columns as first table.
 
 create table employee_details1 (Emp_id int primary key,emp_name varchar(100),emp_salary money)
