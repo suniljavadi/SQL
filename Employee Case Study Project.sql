@@ -28,10 +28,10 @@ insert into employee_title values(7,'Executve','2016-06-11')
 insert into employee_title values(6,'Lead','2016-06-11')
 insert into employee_title values(3,'Lead','2016-06-11')
 
---1 Display the ìFIRST_NAMEî from Employee table using the alias name 
+--1 Display the ‚ÄúFIRST_NAME‚Äù from Employee table using the alias name 
 --as Employee_name.
 select first_name As Employee_name from employee_table
---2 Display ìLAST_NAMEî from Employee table in upper case.
+--2 Display ‚ÄúLAST_NAME‚Äù from Employee table in upper case.
 select upper(last_name) As Employee_name from employee_table
 --3 Display unique values of DEPARTMENT from EMPLOYEE table.
 select distinct department from employee_table
@@ -50,12 +50,12 @@ select * from employee_table order by first_name asc
 --8. Display all EMPLOYEE details order by FIRST_NAME Ascending and 
 --DEPARTMENT Descending.
 select * from employee_table order by first_name asc,department desc
---9 Display details for EMPLOYEE with the first name as ìVEENAî and 
---ìKARANî from EMPLOYEE table.
+--9 Display details for EMPLOYEE with the first name as ‚ÄúVEENA‚Äù and 
+--‚ÄúKARAN‚Äù from EMPLOYEE table.
 select * from employee_table where first_name='Veena' or first_name='karan'
---10 Display details of EMPLOYEE with DEPARTMENT name as ìAdminî.
+--10 Display details of EMPLOYEE with DEPARTMENT name as ‚ÄúAdmin‚Äù.
 select * from employee_table where department='Admin'
---11 DISPLAY details of the EMPLOYEES whose FIRST_NAME contains ëVí.
+--11 DISPLAY details of the EMPLOYEES whose FIRST_NAME contains ‚ÄòV‚Äô.
 select * from employee_table where first_name like '%v%'
 --12 DISPLAY details of the EMPLOYEES whose SALARY lies between 
 --100000 and 500000.
